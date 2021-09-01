@@ -8,15 +8,15 @@ postal_code INT, city VARCHAR(50), province VARCHAR(50)
 
 SELECT  * FROM customers;
 
+
 CREATE TABLE products
 (product_id INT, product_name VARCHAR(50), brand_name VARCHAR(50), 
 description VARCHAR(50), price INT, PRIMARY KEY(product_id));
 
 SELECT  * FROM products;
 
-
-ALTER TABLE products
-ADD gender VARCHAR(10); 
+-- ALTER TABLE products
+-- ADD gender VARCHAR(10); 
 
 
 CREATE TABLE brands
@@ -36,5 +36,3 @@ FOREIGN KEY (product_id) REFERENCES products(product_id));
 
 
 SELECT * FROM categories;
-
-
